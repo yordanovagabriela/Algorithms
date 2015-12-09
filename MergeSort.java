@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class MergeSortAlgorithm {
+public class MergeSort {
 
 	private static void merge(int[] left, int[] right, int[] array) {
 		int leftSize = left.length;

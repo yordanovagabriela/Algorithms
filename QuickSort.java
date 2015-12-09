@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class QuickSortAlgorithm {
+public class QuickSort {
 
 	private static void quickSort(int[] array, int start, int end) {
 		if (start < end) {

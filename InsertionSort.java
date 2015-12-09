@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class InsertionSortAlgorithm {
+public class InsertionSort {
 
 	public static void insertionSort(int[] array) {
 		for (int i = 1; i < array.length; i++) {

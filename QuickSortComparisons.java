@@ -3,8 +3,8 @@ import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class QuickSortAlgorithmCoursera {
-	
+public class QuickSortComparisons {
+
 	public int comparisons = 0;
 
 	public void quickSort(int[] array, int start, int end) {
@@ -25,19 +25,19 @@ public class QuickSortAlgorithmCoursera {
 				swap(array, current, ++wall);
 			}
 		}
-		
+
 		swap(array, start, wall);
-		
+
 		return wall;
 	}
-	
+
 
 	private void swap(int[] array, int ind_1, int ind_2) {
 		int temp = array[ind_1];
 		array[ind_1] = array[ind_2];
 		array[ind_2] = temp;
 	}
-	
+
 	public static int[] getArrayFromFile(File numbers) {
 		int[] array = new int[10000];
 		Scanner fileReader = null;
@@ -61,8 +61,8 @@ public class QuickSortAlgorithmCoursera {
 	}
 
 	public static void main(String[] args) {
-		QuickSortAlgorithmCoursera q = new QuickSortAlgorithmCoursera();
-		int[] array = getArrayFromFile(new File("QuickSort.txt"));
+		QuickSortAlgorithmCoursera q = new QuickSortComparisons();
+		int[] array = getArrayFromFile(new File("QuickSortList.txt"));
 		q.quickSort(array, 0, array.length - 1);
 		System.out.println(Arrays.toString(array));
 		System.out.println(q.comparisons);
