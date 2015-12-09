@@ -9,15 +9,15 @@ public class ShellSort {
 			}
 		}
 		//after these swaps insertion sort will be faster
-		//there will be less cases in which have to perform swapping
+		//there will be less cases in which you have to perform swapping
 	}
-	
+
 	private static void swap(int index1, int index2, int[] array) {
 		int temp = array[index1];
 		array[index1] = array[index2];
 		array[index2] = temp;
 	}
-	
+
 	public static void main(String[] args) {
 		int[] array = {27,50,13,39,57,34,11,22,42,48};
 		sort(array);
