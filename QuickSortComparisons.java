@@ -61,7 +61,7 @@ public class QuickSortComparisons {
 	}
 
 	public static void main(String[] args) {
-		QuickSortAlgorithmCoursera q = new QuickSortComparisons();
+		QuickSortComparisons q = new QuickSortComparisons();
 		int[] array = getArrayFromFile(new File("QuickSortList.txt"));
 		q.quickSort(array, 0, array.length - 1);
 		System.out.println(Arrays.toString(array));
